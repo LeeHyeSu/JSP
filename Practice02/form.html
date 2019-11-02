@@ -1,0 +1,63 @@
+<HTML>
+	<body>
+		<form>
+			<table cellspacing="0" border="1">
+				<tr>
+					<td colspan="2" align="center" bgcolor="lightblue">폼 양식 만들기</td>
+				</tr>
+				<tr>
+					<td align="center">아이디</td>
+					<td><input type=text size=12 name=id> <input type=image src="images/check.gif" align="absmiddle"></td>
+				</tr>
+				<tr>
+					<td align="center">패스워드 </td>
+					<td><input type=password size=12 name=password></td>
+				</tr>
+				<tr>
+					<td align="center">성별</td>
+					<td><input type=radio name=sex value=1>남
+						<input type=radio name=sex value=2 checked>여</td>
+				</tr>
+				<tr>
+					<td align="center">국적</td>
+					<td><input type=text value="대한민국" readonly>
+						<input type=button value="국적변경" disabled></td>
+				</tr>
+				<tr>
+					<td align="center">휴대폰</td>
+					<td><select name=phone>
+							<option value=1 selectd>011</option>
+							<option value=2>010</option>
+							<option value=3>017</option>
+							<option value=4>070</option>
+							<option value=5>080</option>
+						</select>
+						-
+						<input type=text size=2 name=pnum1 maxlength=4>
+						-
+						<input type=text size=2 name=pnum2 maxlength=4></td>
+				</tr>
+				<tr>
+					<td align="center">가족사항</td>
+					<td><input type=checkbox name=family value=1>조부모
+						<input type=checkbox name=family value=2 checked>부모
+						<input type=checkbox name=family value=3>형제자매
+						<input type=checkbox name=family value=4>배우자
+						<input type=checkbox name=family value=5>자식</td>
+				</tr>
+				<tr>
+					<td align="center">소개글</td>
+					<td><textarea cols="50" rows="5">관심분야에 대해 쓰세요</textarea></td>
+				</tr>
+				<tr>
+					<td align="center">증명사진</td>
+					<td><input type=file></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center" bgcolor="lightblue"><input type=submit value="가입하기">
+						<input type=reset value="다시작성"></td>
+				</tr>	
+			</table>
+		</form>
+	</body>
+</HTML>

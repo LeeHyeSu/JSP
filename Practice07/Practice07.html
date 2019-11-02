@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>입력한 메일 주소의 형식 확인하기</title>
+
+<script type="text/javascript">
+	function checkEmail() {
+		var txtMail = frm.email.value;
+		var result = txtMail.indexOf("@");
+		if (result == -1) {
+			alert("메일 주소형식이 틀렸습니다");
+		}
+		else {
+			alert("메일링에 가입되었습니다");
+		}
+	}
+</script>
+</head>
+<body>
+
+<form name="frm">
+	<table align="center" border="0" bgcolor="lightpink" width="600px" height="150px">
+		<tr align="center">
+			<td>
+			<input type="text" name="email" value="소식지 받아보기" onFocus="this.value=''">
+			<input type="image" src="images/bt_ok.gif" align="absmiddle" 
+					onClick="checkEmail()"><p>
+			
+			<input type="radio" name="subscription" value="1" checked>가입   
+			<input type="radio" name="subscription" value="2">해지<p>
+			
+			"@"가 빠진 이메일 주소를 입력한 다음 "OK"버튼을 눌러 보세요.
+			</td>	
+		</tr>
+	</table>
+</form>
+
+</body>
+</html>
